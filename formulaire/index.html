@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Formulaire D'inscription Utilisateur</h2>
+    <form id="registrationForm">
+        <div class="row">
+            <label for="FirstName">Prénom:</label><br><input type="text" id="FirstName" name=" FirstName" required /><br>
+        </div>
+
+        <div class="row">
+            <label for="lastName">nom:</label><br><input type="text" id="lastName" name=" lastName" required /><br>
+        </div>
+
+        <div class="row">
+            <label for="email">Email:</label><br><input type="email" id="email" name="email " required /><br>
+        </div>
+
+        <div class="row">
+            <label for="password">mot de passe:</label><br><input type="password" name="Password" id="Password" required /><br>
+        </div>
+
+        <div class="row">
+            <label for="confirmPassword">Confirmer le mot de passe:</label><br><input type="password" name="confirmPassword" id="confirmPassword" required /><br>
+        </div>
+
+        <fieldset>
+            <legend>Genre:</legend><input type="radio" name="genre" value="male" id="male">Masculine
+            <input type="radio" name="genre" value="female" id="female">Féminin
+        </fieldset>
+        <div class="row">
+            <label for="country">pays:</label><br>
+            <select id="country" name="country" required>
+                <option value="">selectionnez un pays </option>
+                <option value="france">France </option>
+                <option value="belgique">Belqique</option>
+                <option value="suisse">Suisse</option>
+            
+            </select><br>
+        </div>
+        <input type="button" value="s'inscrie">
+
+    </form>
+    <div id="successMessage"></div>
+    <div id="errorMessage" class="error"></div>
+</div>
+    <script src="contorle1.js" async ></script>
+</body>
+</html>
